@@ -1,0 +1,21 @@
+## application.yaml
+cloud:
+  aws:
+    region:
+      static: us-east-2
+    stack:
+      auto: false
+    credentials:
+      profile-name: default
+
+queue:
+  name : tradesman
+topic:
+  name : arn:aws:sns:us-east-2:261183892025:tradesman
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
